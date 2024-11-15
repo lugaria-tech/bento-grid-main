@@ -202,12 +202,15 @@ body {
     gap: 10px;
   }
 
-  .footer {
-    display: flex;
+  .grow-followers {
     grid-column-start: 1;
     grid-column-end: 3;
-    gap: 10px;
-    flex-direction: row-reverse;
+    flex-direction: row;
+  }
+
+  .ai-content {
+    grid-row-start: 5;
+    grid-row-end: 7;
   }
 }
 
@@ -222,11 +225,11 @@ body {
     max-width: 90%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
     grid-template-areas:
       "aside social social schedule"
       "aside account posting schedule"
-      "aside footer footer footer";
+      "aside audience grow grow";
   }
   .social-media {
     grid-area: social;
@@ -282,7 +285,6 @@ body {
   }
 
   .aside {
-    padding-bottom: 2rem;
     grid-area: aside;
     height: 100%;
     display: flex;
@@ -292,7 +294,7 @@ body {
 
   .create-post {
     padding: 2rem;
-    height: 46%;
+    height: 47%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -303,7 +305,7 @@ body {
   }
 
   .ai-content {
-    height: 46%;
+    height: 47%;
   }
 
   .ai-content img {
@@ -311,14 +313,8 @@ body {
     margin-top: 2rem;
   }
 
-  .footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 2rem;
-  }
-
   .audience-growth img {
+    grid-area: audience;
     width: 100%;
     margin-top: 2rem;
   }
