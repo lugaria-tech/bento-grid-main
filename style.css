@@ -35,7 +35,7 @@ section {
 }
 
 body {
-  font-size: 18px;
+  font-size: 1.3rem;
   font-family: DMSans;
   line-height: 1;
 }
@@ -175,6 +175,10 @@ body {
     width: 85%;
     max-width: 600px;
   }
+
+  .audience-growth img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 510px) {
@@ -277,7 +281,11 @@ body {
   .grow-followers {
     grid-area: grow;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
+  }
+
+  .grow-followers img {
+    width: 40%;
   }
 
   .grow-followers h3 {
@@ -313,9 +321,11 @@ body {
     margin-top: 2rem;
   }
 
-  .audience-growth img {
+  .audience-growth {
     grid-area: audience;
-    width: 100%;
+  }
+
+  .audience-growth img {
     margin-top: 2rem;
   }
 
